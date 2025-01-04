@@ -32,14 +32,8 @@ type TResponse = {
     totalPages: number;
   };
 };
-
-// type TParams<T> = Partial<{
-//   data: T;
-// }>;
 /* Метод для получения баланса по нескольким счетам */
-export const getBalancesList = async (
-  // params?: TParams<TRequest>
-): TReturn<TMessage<TResponse>> => {
+export const getBalancesList = async (): TReturn<TMessage<TResponse>> => {
   const apiVersion = parsed?.API_VERSION;
 
   const url = `https://enter.tochka.com/uapi/open-banking/${apiVersion}/balances`;

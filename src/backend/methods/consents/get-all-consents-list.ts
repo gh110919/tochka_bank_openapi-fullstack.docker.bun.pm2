@@ -34,14 +34,8 @@ type TResponse = {
     totalPages: number;
   };
 };
-
-// type TParams<T> = Partial<{
-//   data: T;
-// }>;
 /* Метод для получения списка разрешений */
-export const getAllConsentsList = async (
-  // params?: TParams<TRequest>
-): TReturn<TMessage<TResponse>> => {
+export const getAllConsentsList = async (): TReturn<TMessage<TResponse>> => {
   const apiVersion = parsed?.API_VERSION;
 
   const url = `https://enter.tochka.com/uapi/consent/${apiVersion}/consents`;

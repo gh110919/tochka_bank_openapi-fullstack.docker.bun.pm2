@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "paths": {
+      "APP/*": ["/src/frontend/app/*"],
+      "PAGES/*": ["src/frontend/pages/*"],
+      "UTILS/*": ["src/frontend/utils/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true
+  },
+  "include": ["src"]
+}
